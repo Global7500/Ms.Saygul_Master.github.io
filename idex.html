@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tezkor Ingliz tili</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Bosh sahifa</a></li>
+                    <li><a href="books.html">Kitoblar</a></li>
+                    <li><a href="#audio">Audio Darslar</a></li>
+                    <li><a href="#homework">Uyga Vazifalar</a></li>
+                    <li><a href="#dictionary">Onlayn Lug'at</a></li>
+                    <li><a href="https://t.me/yourtelegramlink" target="_blank">Aloqa</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <h1>Ms. Saygul MASTER</h1>
+                <p>Eng yaxshi resurslar va darslar bilan tilni o'rganing.</p>
+                <a href="#homework" class="cta-button">Uyga Vazifalar</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Xush Kelibsiz!</h2>
+                <p>Bu sayt sizga ingliz tilini o'rganishda yordam beradi. Kitoblar, audio darslar va ko'plab boshqa resurslar bilan tanishing.</p>
+                <p>Sayt asoschisi Suyunova Saygul. Sayt to'liq Saygul ustozni metodikasi asosida bo'ladi.</p>
+                <p aria-colindex="hero-bg.jpg">Hammangizga OMAD YOR BO'LSIN ..!</p>
+            </div>
+        </section>
+        <section id="books" class="section bg-light">
+            <div class="container">
+                <h2>Kitoblar</h2>
+                <div class="resource-card">
+                    <h3>English Grammar in Use</h3>
+                    <p>Avtor: Raymond Murphy</p>
+                    <a href="75.pdf" target="_blank" class="btn">Kitobni ko'rish (PDF)</a>
+                </div>
+                <div class="resource-card">
+                    <h3>Essential English Vocabulary</h3>
+                    <p>Avtor: Oxford University Press</p>
+                    <a href="74.pdf" target="_blank" class="btn">Kitobni ko'rish (PDF)</a>
+                </div>
+            </div>
+        </section>
+        <section id="audio" class="section">
+            <div class="container">
+                <h2>Audio Darslar</h2>
+                <div class="audio-card">
+                    <h3>Til o'rganishdagi kerakli ko'nikmalar</h3>
+                    <audio controls>
+                        <source src="A75.mp3" type="audio/mpeg">
+                        Sizning brauzeringiz audio elementini qo'llab-quvvatlamaydi.
+                    </audio>
+                </div>
+                <div class="audio-card">
+                    <h3>Intermediate English Lessons</h3>
+                    <audio controls>
+                        <source src="A74.mp4" type="audio/mpeg">
+                        Sizning brauzeringiz audio elementini qo'llab-quvvatlamaydi.
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <section id="homework" class="section bg-light">
+            <div class="container">
+                <h2>Uyga Vazifalar</h2>
+                <div class="homework-card">
+                    <h3>Vazifa 1</h3>
+                    <p><strong>Vazifa:</strong> Ingliz tilida qisqa hikoya yozing (150-200 so'z). Hikoyangizni pastga yuklangan rasmga o'xshash tarzda formatlash kerak.</p>
+                    <p><strong>Ko'rsatmalar:</strong> Hikoyangizni quyidagi formatda yozing va rasmga o'xshash qilib tayyorlang. Rasm sifatida yuklab olish mumkin bo'lgan faylni tanlang.</p>
+                    <input type="file" accept="image/*" id="homework-upload-1">
+                    <button class="btn" onclick="uploadHomework('homework-upload-1')">Yuklash</button>
+                </div>
+                <div class="homework-card">
+                    <h3>Vazifa 2</h3>
+                    <p><strong>Vazifa:</strong> Ingliz tilida 5 ta yangi so'z yozing va ularning ma'nolarini qisqacha tushuntiring.</p>
+                    <p><strong>Ko'rsatmalar:</strong> So'zlarni va ma'nolarini rasmga tushirib, quyidagi formatda tayyorlang. Rasm sifatida yuklab olish mumkin bo'lgan faylni tanlang.</p>
+                    <input type="file" accept="image/*" id="homework-upload-2">
+                    <button class="btn" onclick="uploadHomework('homework-upload-2')">Yuklash</button>
+                </div>
+            </div>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Davlatlar Haqida Ma'lumot</title>
+                <link rel="stylesheet" href="styles.css"> <!-- CSS faylingizni ulash -->
+            </head>
+            <body>
+                <div id="info-widget" class="info-widget">
+                    <!-- Davlatlar ma'lumotlari bu yerda ko'rsatiladi -->
+                </div>
+                <button id="prev">Old</button>
+                <button id="next">Keyingi</button>
+                <script src="script.js"></script> <!-- JavaScript faylingizni ulash -->
+            </body>
+            </html>
