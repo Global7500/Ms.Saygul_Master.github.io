@@ -1,0 +1,262 @@
+/* Umumiy uslublar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url('hero-br.jpg') no-repeat center center fixed;
+    background-size: cover; /* Orqa fon rasm */
+    animation: backgroundAnimation 30s infinite alternate; /* Orqa fon animatsiyasi */
+}
+
+/* Konteyner */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Navigatsiya */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* Yarm shaffof fon */
+    padding: 10px 20px;
+    animation: fadeIn 2s ease-in; /* Fade-in animatsiya */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #19be7a;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: hsl(273, 61%, 60%);
+}
+
+/* Sarlavhalar */
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Bosh sahifa qahramoni */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #d31c1c;
+    padding: 120px 20px;
+    background: url('.jpg') no-repeat center center/cover; /* Orqa fon rasm */
+    overflow: hidden;
+    animation: fadeIn 2s ease-out; /* Fade-in animatsiya */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: slideInFromTop 1.5s ease-out; /* Matn animatsiyasi */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    animation: fadeInUp 1.5s ease-out 0.5s; /* Matn animatsiyasi */
+}
+
+/* CTA tugma */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #43e6bd;
+    background: hsl(293, 95%, 15%);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: hsl(258, 95%, 15%);
+    transform: scale(1.05);
+}
+
+/* Bo'limlar */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(58, 212, 212, 0.8); /* Yarm shaffof fon */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px hsla(310, 94%, 37%, 0.102);
+}
+
+/* Yengil fon bilan bo'lim */
+.section.bg-light {
+    background: url('71.jpg') no-repeat center center/cover; /* Orqa fon rasm */
+    color: #333; /* Matn rangi */
+}
+
+/* Qorong'i fon bilan bo'lim */
+.section.bg-dark {
+    background: url('71.jpg') no-repeat center center/cover; /* Orqa fon rasm */
+    color: hwb(118 27% 9%); /* Matn rangi */
+}
+
+/* Kitoblar */
+.resource-card {
+    background: #43e6bd; /* Yarm shaffof fon */
+    border: 1px solid hsl(285, 55%, 81%);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: fadeIn 2s ease-out;
+}
+
+.resource-card h3 {
+    margin-top: 0;
+}
+
+/* Tugmalar */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: hsl(0, 0%, 0%);
+    background: #43e6bd;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: hsl(125, 72%, 65%);
+    transform: scale(1.05);
+}
+
+/* Audio darslar */
+.audio-card {
+    background: hwb(231 67% 17%);
+    border: 1px solid hsl(285, 55%, 81%);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Uyga vazifalar */
+.homework-card {
+    background: #43e6bd;
+    border: 1px solid hsl(285, 55%, 81%);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: fadeIn 2s ease-out;
+}
+
+.homework-card h3 {
+    margin-top: 0;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+/* Onlayn lug'at */
+#info-widget {
+    background: hsla(172, 89%, 39%, 0.902);
+    border: 1px solid hsl(285, 55%, 81%);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px hsla(243, 52%, 72%, 0.1);
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+#info-widget h2 {
+    margin-top: 0;
+}
+
+#info-widget p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8); /* Qorong'i shaffof fon */
+    color: #1f8a39;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Boshqa */
+.bg-light {
+    background: rgba(85, 202, 17, 0.8) /* Yarm shaffof fon */
+}
+
+.bg-dark {
+    background: rgba(0, 0, 0, 0.7); /* Qorong'i shaffof fon */
+    color: rgba(85, 202, 17, 0.8);
+}
+
+/* Animatsiyalar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: hwb(236 47% 36%);
+    }
+    50% {
+        background-color: hwb(236 47% 36%);
+    }
+    100% {
+        background-color: hwb(236 47% 36%);
+    }
+}
